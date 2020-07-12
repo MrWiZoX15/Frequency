@@ -30,7 +30,7 @@ public final class JesusA extends PositionCheck {
         final boolean stationary = deltaX % 1.0 == 0.0 && deltaZ % 1.0 == 0.0;
 
         // If the delta is greater than 0.0 and the player is stationary
-        if (deltaY > 0.0 && !onGround && !touchingLiquid && stationary) {
+        if (deltaY > 0.0 && !onGround && touchingLiquid && stationary) {
             final double horizontalDistance = Math.hypot(deltaX, deltaZ);
 
             // If the player is moving too, flag
